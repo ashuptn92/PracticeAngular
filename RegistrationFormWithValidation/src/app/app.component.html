@@ -1,0 +1,28 @@
+<div>
+  <form>
+    <h4>Registration</h4>
+    Username: <input type="text" [(ngModel)]="username" name="username"><br>
+    Password: <input type="text" [(ngModel)]="password" name="password"><br>
+    Confirm Password: <input type="text" [(ngModel)]="conpassword" name="conpassword"><br>
+    <input type="checkbox" [(ngModel)]="acceptlicenseagreement" name="acceptlicenseagreement"> 
+    I accept license agreement<br>
+    Gender:
+    <input type="radio" [(ngModel)]="gender" name="gender" value="Male">Male
+    <input type="radio" [(ngModel)]="gender" name="gender" value="Female">Female
+    <br>
+    Country:
+    <select [(ngModel)]="country" name="country">
+      <option>Please Select</option>
+      <option>INDIA</option>
+      <option>US</option>
+      <option>NEPAL</option>
+      <option>AMERICA</option>
+      <option>IRAN</option>
+      <option>RUSIA</option>
+    </select><br>
+    <input type="submit" value="Register" (click)="RegisterClick()"><br><br>
+    <!-- here innerHTML will remove the html tags from msg variable. -->
+    <div [innerHTML]="msg"></div> 
+    <!-- {{msg}} -->
+  </form>
+</div>

@@ -1,0 +1,29 @@
+<div>
+  <h2>Data Binding</h2>
+  First name:  {{firstname}}<br>
+  Last name: {{lastname}} <br>
+  Age: {{age}}<br>
+  Receiver News Letters: {{receivenewsletter}}<br>
+  Gender: {{gender}}<br>
+  Country: {{country}}<br><br>
+
+  <a [href]="address">Click here</a><br><br>
+
+  First Name: <input type="text" [(ngModel)]="firstname"><br>
+  Last Name: <input type="text" [(ngModel)]="lastname"><br>
+  Age: <input type="text" [(ngModel)]="age"><br>
+  Receive News Letter: <input type="checkbox" [(ngModel)]="receivenewsletter"><br>
+  Gender:
+  <input type="radio" [(ngModel)]="gender" value="Male">Male
+  <input type="radio" [(ngModel)]="gender" value="Female">Female<br>
+  Country:
+  <select [(ngModel)]="country">
+    <option>INDIA</option>
+    <option>UK</option>
+    <option>NEPAL</option>
+    <option>LONDON</option>
+    <option>AMERICA</option>
+  </select><br><br>
+  <input type="button" value="Change Data" (click)="ChangeData()">
+  <!-- <router-outlet></router-outlet> -->
+  </div>
