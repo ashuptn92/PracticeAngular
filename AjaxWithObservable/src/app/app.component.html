@@ -1,0 +1,17 @@
+<div>
+  <h4>Ajax Java Observable Get</h4>
+  <input type="button" value="Get Data" (click)="onGetDataClick()">
+  <table border="1">
+    <tr>
+      <th>EMPLOYEE ID</th>
+      <th>EMPLOYEE NAME</th>
+      <th>EMPLOYEE SALARY</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.empid}}</td>
+        <td>{{employee.empname}}</td>
+        <td>{{employee.salary}}</td>
+    </tr>
+  </table>
+</div>
